@@ -13,3 +13,4 @@ D:\WorkSpaces\BE\.NET\AirConditionerShop\AirConditionerShop\AirConditionerShop.B
 D:\WorkSpaces\BE\.NET\AirConditionerShop\AirConditionerShop\AirConditionerShop.BLL\obj\Debug\net8.0\refint\AirConditionerShop.BLL.dll
 D:\WorkSpaces\BE\.NET\AirConditionerShop\AirConditionerShop\AirConditionerShop.BLL\obj\Debug\net8.0\AirConditionerShop.BLL.pdb
 D:\WorkSpaces\BE\.NET\AirConditionerShop\AirConditionerShop\AirConditionerShop.BLL\obj\Debug\net8.0\ref\AirConditionerShop.BLL.dll
+D:\WorkSpaces\BE\.NET\AirConditionerShop\AirConditionerShop\AirConditionerShop.BLL\obj\Debug\net8.0\AirConditionerShop.BLL.sourcelink.json

@@ -5,8 +5,22 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:AirConditionerShop"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="AirConditionerShopManagement" Height="600" Width="1000" Background="#7bed9f" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
     <Grid>
+        <DataGrid HorizontalAlignment="Left" Height="232" Margin="29,249,0,0" VerticalAlignment="Top" Width="749" AutoGenerateColumns="False">
+            <!-- true là có bao nhiêu data hay cột trong DB sẽ đc load lên hết, kể cả bảng JOIN, false là để config riêng (<table><thead><thead><table>) -->
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="ID" Width="40" Binding="{Binding AirConditionerId}"/>
+                <DataGridTextColumn Header="Air Name" Width="200" Binding="{Binding AirConditionerName}"/>
+                <DataGridTextColumn Header="Warranty" Width="70" Binding="{Binding AirConditionerId}"/>
+                <DataGridTextColumn Header="SoundPressureLevel" Width="100" Binding="{Binding SoundPressureLevel}"/>
+                <DataGridTextColumn Header="FeatureFunction" Width="200" Binding="{Binding FeatureFunction}"/>
+                <DataGridTextColumn Header="Quantity" Width="70" Binding="{Binding Quantity}"/>
+                <DataGridTextColumn Header="Price ($)" Width="100" Binding="{Binding DollarPrice }"/>
+                <DataGridTextColumn Header="SupplierId " Width="40" Binding="{Binding SupplierId }"/>
 
+                <!-- Binding là nối data với cột trong DB -->
+            </DataGrid.Columns>
+        </DataGrid>
     </Grid>
 </Window>

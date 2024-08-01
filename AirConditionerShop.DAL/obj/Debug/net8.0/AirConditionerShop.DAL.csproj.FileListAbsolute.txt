@@ -9,3 +9,7 @@ D:\WorkSpaces\BE\.NET\AirConditionerShop\AirConditionerShop\AirConditionerShop.D
 D:\WorkSpaces\BE\.NET\AirConditionerShop\AirConditionerShop\AirConditionerShop.DAL\obj\Debug\net8.0\refint\AirConditionerShop.DAL.dll
 D:\WorkSpaces\BE\.NET\AirConditionerShop\AirConditionerShop\AirConditionerShop.DAL\obj\Debug\net8.0\AirConditionerShop.DAL.pdb
 D:\WorkSpaces\BE\.NET\AirConditionerShop\AirConditionerShop\AirConditionerShop.DAL\obj\Debug\net8.0\ref\AirConditionerShop.DAL.dll
+D:\WorkSpaces\BE\.NET\AirConditionerShop\AirConditionerShop\AirConditionerShop.DAL\bin\Debug\net8.0\AirConditionerShop.DAL.runtimeconfig.json
+D:\WorkSpaces\BE\.NET\AirConditionerShop\AirConditionerShop\AirConditionerShop.DAL\obj\Debug\net8.0\AirConditionerShop.DAL.csproj.AssemblyReference.cache
+D:\WorkSpaces\BE\.NET\AirConditionerShop\AirConditionerShop\AirConditionerShop.DAL\obj\Debug\net8.0\AirConditionerShop.DAL.sourcelink.json
+D:\WorkSpaces\BE\.NET\AirConditionerShop\AirConditionerShop\AirConditionerShop.DAL\obj\Debug\net8.0\AirConditionerShop.DAL.genruntimeconfig.cache

@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:AirConditionerShop"
         mc:Ignorable="d"
-        Title="DetailWindow" Height="450" Width="800">
+         Title="AirConditionerShopManagement" Height="600" Width="1000" Background="#7bed9f" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
     <Grid>
         
     </Grid>

@@ -4,6 +4,34 @@
              xmlns:local="clr-namespace:AirConditionerShop"
              StartupUri="LoginWindow.xaml">
     <Application.Resources>
-         
+        
+         <!-- Default lable style -->
+
+        <Style TargetType="Label" >
+            <Setter Property="Background" Value="Transparent"></Setter>
+            <Setter Property="Foreground" Value="#c71585"></Setter>
+            <Setter Property="FontSize" Value="15"></Setter>
+            <Setter Property="FontWeight" Value="DemiBold"></Setter>
+            <Setter Property="HorizontalContentAlignment" Value="Center"></Setter>
+        </Style>
+
+        <!-- Default lable style 2 -> style="{StaticResource StyleLable2}" -->
+
+        <Style x:Key="StyleLable2" TargetType="Label" >
+            <Setter Property="Background" Value="Transparent"></Setter>
+            <Setter Property="Foreground" Value="#c71585"></Setter>
+            <Setter Property="FontSize" Value="20"></Setter>
+            <Setter Property="FontWeight" Value="DemiBold"></Setter>
+        </Style>
+
+        <!-- Default button style -->
+
+        <Style TargetType="Button" >
+            <Setter Property="Background" Value="#00b7eb"></Setter>
+            <Setter Property="Foreground" Value="Black"></Setter>
+            <Setter Property="FontSize" Value="20"></Setter>
+            <Setter Property="FontWeight" Value="DemiBold"></Setter>
+        </Style>
+
     </Application.Resources>
 </Application>

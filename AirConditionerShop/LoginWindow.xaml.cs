@@ -23,5 +23,13 @@ namespace AirConditionerShop
         {
             InitializeComponent();
         }
+
+        private void LoginButton_Click(object sender, RoutedEventArgs e)
+        {
+            // tạo ra đối tường màn hình Main
+            MainWindow main = new();
+            main.ShowDialog();
+            // show() là sẽ new ra cửa sổ mới nên cứ bấm là new
+        }
     }
 }
