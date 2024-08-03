@@ -26,9 +26,9 @@
         <Rectangle Fill="#ffcba4" HorizontalAlignment="Center" Height="120" Stroke="Black" VerticalAlignment="Top" Width="1000"/>
         <TextBox HorizontalAlignment="Left" Margin="10,153,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="243" Height="34"/>
         <Button Content="Search" Background="#7cfc00" HorizontalAlignment="Left" Margin="258,144,0,0" VerticalAlignment="Top" Height="51" Width="130"/>
-        <Button Content="Create Air" Background="#7cfc00" HorizontalAlignment="Left" Margin="451,144,0,0" VerticalAlignment="Top" Width="164" Height="51" Click="Button_Click"/>
-        <Button Content="Update Air" Background="#7cfc00" HorizontalAlignment="Left" Margin="636,144,0,0" VerticalAlignment="Top" Height="51" Width="179"/>
-        <Button Content="Delete Air" Background="#7cfc00" HorizontalAlignment="Left" Margin="833,144,0,0" VerticalAlignment="Top" Width="157" Height="52"/>
+        <Button Content="Create Air" Background="#7cfc00" HorizontalAlignment="Left" Margin="451,144,0,0" VerticalAlignment="Top" Width="164" Height="51" Click="CreateButton_Click"/>
+        <Button Content="Update Air" Background="#7cfc00" HorizontalAlignment="Left" Margin="636,144,0,0" VerticalAlignment="Top" Height="51" Width="179" Click="UpdateButton_Click"/>
+        <Button Content="Delete Air" Background="#7cfc00" HorizontalAlignment="Left" Margin="833,144,0,0" VerticalAlignment="Top" Width="157" Height="52" Click="DeleteButton_Click"/>
         <Label Content="AirConditioner Management" FontSize="25" FontWeight="ExtraBold" HorizontalAlignment="Left" Margin="10,39,0,0" VerticalAlignment="Top" Width="378"/>
     </Grid>
 </Window>

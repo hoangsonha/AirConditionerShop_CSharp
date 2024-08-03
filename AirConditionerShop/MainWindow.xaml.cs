@@ -1,4 +1,5 @@
 ﻿using AirConditionerShop.BLL.Services;
+using AirConditionerShop.DAL.Entities;
 using System.Text;
 using System.Windows;
 using System.Windows.Controls;
@@ -39,10 +40,51 @@ namespace AirConditionerShop
 
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void CreateButton_Click(object sender, RoutedEventArgs e)
         {
             DetailWindow detailWindow = new();
             detailWindow.ShowDialog();
+
+            FillDaTaInGrid();
+        }
+
+        private void UpdateButton_Click(object sender, RoutedEventArgs e)
+        {
+            // trả về null nếu k select cái lưới, nếu select nó sẽ trả về object
+
+            //AirConditioner selected = (AirConditioner) AirConDataGrid.SelectedItem; // cách này nếu bị Exception thì phải bắt, còn biến dưới là k đc sẽ gán bằng null;
+
+            AirConditioner selected = AirConDataGrid.SelectedItem as AirConditioner;
+            if(selected == null) 
+            {
+                MessageBox.Show("Please select a row/ an air conditioner before editting!", "Select a row!",MessageBoxButton.OK, MessageBoxImage.Exclamation);
+                return;
+            }
+
+            DetailWindow detailWindow = new();
+            detailWindow.EditedAirCon = selected;
+            detailWindow.ShowDialog();
+
+            FillDaTaInGrid();
+        }
+
+        private void DeleteButton_Click(object sender, RoutedEventArgs e)
+        {
+            AirConditioner selected = AirConDataGrid.SelectedItem as AirConditioner;
+            if (selected == null)
+            {
+                MessageBox.Show("Please select a row/ an air conditioner before deleting!", "Select a row!", MessageBoxButton.OK, MessageBoxImage.Exclamation);
+                return;
+            }
+
+            MessageBoxResult answer = MessageBox.Show("Do you really want to delete?", "Comfirm?", MessageBoxButton.YesNo, MessageBoxImage.Question);
+
+            if (answer == MessageBoxResult.No) {
+                return;
+            }
+
+            _airService.DeleteCon(
+                selected);
 
             FillDaTaInGrid();
         }

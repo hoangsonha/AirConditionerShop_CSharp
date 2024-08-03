@@ -7,8 +7,8 @@
         mc:Ignorable="d"
          Title="AirConditionerShopManagement" Height="600" Width="1000" Background="#7bed9f" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" Loaded="Window_Loaded">
     <Grid>
-        <Rectangle HorizontalAlignment="Center" Height="121" Stroke="Black" VerticalAlignment="Top" Width="1000"/>
-        <Rectangle HorizontalAlignment="Left" Height="351" Margin="30,192,0,0" Stroke="Black" VerticalAlignment="Top" Width="777"/>
+        <Rectangle Fill="#ffcba4" HorizontalAlignment="Center" Height="121" Stroke="Black" VerticalAlignment="Top" Width="1000"/>
+        <Rectangle Fill="#ffcba4" HorizontalAlignment="Left" Height="351" Margin="30,192,0,0" Stroke="Black" VerticalAlignment="Top" Width="777"/>
         <Label Content="Air Con ID" HorizontalAlignment="Left" Margin="87,231,0,0" VerticalAlignment="Top"/>
         <Label Content="Ari Con Name" HorizontalAlignment="Left" Margin="432,240,0,0" VerticalAlignment="Top"/>
         <Label Content="SupplierName" HorizontalAlignment="Center" Margin="0,444,0,0" VerticalAlignment="Top"/>
@@ -17,17 +17,18 @@
         <Label Content="DollarPrice" HorizontalAlignment="Left" Margin="87,432,0,0" VerticalAlignment="Top"/>
         <Label Content="FeatureFunction" HorizontalAlignment="Left" Margin="87,368,0,0" VerticalAlignment="Top"/>
         <Label Content="Warranly" HorizontalAlignment="Left" Margin="87,292,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="AirConditionerIdTextBox" HorizontalAlignment="Left" Margin="213,237,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="AirConditionerIdTextBox" HorizontalAlignment="Left" Margin="213,237,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
         <ComboBox x:Name="SupplierIdComboBox" HorizontalAlignment="Left" Margin="558,449,0,0" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="DollarPriceTextBox" HorizontalAlignment="Left" Margin="213,432,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="QuantityTextBox" HorizontalAlignment="Left" Margin="553,377,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="FeatureFunctionTextBox" HorizontalAlignment="Left" Margin="213,374,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="SoundPressureLevelTextBox" HorizontalAlignment="Left" Margin="553,304,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="WarrantyTextBox" HorizontalAlignment="Left" Margin="213,298,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="AirConditionerNameTextBox" HorizontalAlignment="Left" Margin="553,243,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="DollarPriceTextBox" HorizontalAlignment="Left" Margin="213,432,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="QuantityTextBox" HorizontalAlignment="Left" Margin="553,377,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="FeatureFunctionTextBox" HorizontalAlignment="Left" Margin="213,374,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="SoundPressureLevelTextBox" HorizontalAlignment="Left" Margin="553,304,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="WarrantyTextBox" HorizontalAlignment="Left" Margin="213,298,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="AirConditionerNameTextBox" HorizontalAlignment="Left" Margin="553,243,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
         <Button x:Name="SaveButton" Content="Save Air" HorizontalAlignment="Left" Margin="213,493,0,0" VerticalAlignment="Top" Click="SaveButton_Click"/>
-        <Button Content="Close" HorizontalAlignment="Left" Margin="373,493,0,0" VerticalAlignment="Top"/>
-        
+        <Button x:Name="CloseButton"  Content="Close" HorizontalAlignment="Left" Margin="373,493,0,0" VerticalAlignment="Top" Click="CloseButton_Click"/>
+        <Label x:Name="DetailWindowMode" FontSize="25" Content="Create | Update Air Conditioner" HorizontalAlignment="Left" Margin="87,46,0,0" VerticalAlignment="Top"/>
+
 
     </Grid>
 </Window>

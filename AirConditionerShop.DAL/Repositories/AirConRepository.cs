@@ -35,5 +35,20 @@ namespace AirConditionerShop.DAL.Repositories
             _context.AirConditioners.Add(airConditioner); // save ram
             _context.SaveChanges(); // save DB
         }
+
+        public void Update(AirConditioner airConditioner)
+        {
+            _context = new();
+            _context.AirConditioners.Update(airConditioner);
+            _context.SaveChanges();
+              
+        }
+
+        public void Delete(AirConditioner airConditioner)
+        {
+            _context = new();
+            _context.AirConditioners.Remove(airConditioner);
+            _context.SaveChanges();
+        }
     }
 }

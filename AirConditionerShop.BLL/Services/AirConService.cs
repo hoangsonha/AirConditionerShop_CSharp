@@ -21,5 +21,17 @@ namespace AirConditionerShop.BLL.Services
         {
             _airConRepo.Add(con);
         }
+
+        public void UpdateCon(AirConditioner con)
+        {
+            _airConRepo.Update(con);
+        }
+
+        public void DeleteCon(AirConditioner con)
+        {
+            _airConRepo.Delete(con);
+        }
+
     }
+
 }

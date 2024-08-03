@@ -21,6 +21,8 @@ namespace AirConditionerShop
     /// </summary>
     public partial class DetailWindow : Window
     {
+        public AirConditioner EditedAirCon { get; set; } = null;  // flag variable to identify which screen is update or create,
+
         private AirConService _airService = new();
         private SupplierComSerivce _supplierComService = new();
 
@@ -41,15 +43,28 @@ namespace AirConditionerShop
             airConditioner.DollarPrice = double.Parse(DollarPriceTextBox.Text);
             airConditioner.SupplierId = SupplierIdComboBox.SelectedValue.ToString();
 
-            _airService.AddCon(airConditioner);
-
+            if(EditedAirCon == null)
+            
+                _airService.AddCon(airConditioner);
+            
+             else 
+                _airService.UpdateCon(airConditioner);
+            
+            
             this.Close();
         }
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
             FillDataSupplierCompany();
+            FillElement(EditedAirCon);
 
+            // change title screen for update or create
+
+            if(EditedAirCon != null)
+                DetailWindowMode.Content = "Cập nhật thông tin máy lạnh"; 
+            else
+                DetailWindowMode.Content = "Tạo mới thông tin máy lạnh";
         }
 
         private void FillDataSupplierCompany()
@@ -58,6 +73,32 @@ namespace AirConditionerShop
             SupplierIdComboBox.DisplayMemberPath = "SupplierName";
             SupplierIdComboBox.SelectedValuePath = "SupplierId";
             
+        }
+
+        // this method fill data for update
+        private void FillElement(AirConditioner x)
+        {
+            if (x == null) return;
+            AirConditionerIdTextBox.Text = x.AirConditionerId.ToString();
+
+            // disable input ID
+
+            AirConditionerIdTextBox.IsEnabled = false;
+
+            AirConditionerNameTextBox.Text = x.AirConditionerName;
+            WarrantyTextBox.Text = x.Warranty;
+            SoundPressureLevelTextBox.Text = x.SoundPressureLevel; 
+            FeatureFunctionTextBox.Text = x.FeatureFunction;
+            QuantityTextBox.Text = x.Quantity.ToString();
+            DollarPriceTextBox.Text = x.Quantity.ToString();
+            SupplierIdComboBox.SelectedValue = x.SupplierId;
+
+        }
+
+        private void CloseButton_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+            // TODO: hỏi rằng có muốn save hay k trước khi đóng
         }
     }
 }
