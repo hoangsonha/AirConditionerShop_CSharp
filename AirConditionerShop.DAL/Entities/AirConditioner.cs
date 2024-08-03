@@ -21,5 +21,6 @@ public partial class AirConditioner
 
     public string? SupplierId { get; set; }
 
-    public virtual SupplierCompany? Supplier { get; set; }
+    public virtual SupplierCompany? Supplier { get; set; } // OOP: object Máy lạnh này tham chiếu dến Nhà Cung Cấp tương ứng
+    // supplier này là biến trỏ vào vùng new SUpplierCompany (1 dòng trong Supplier)
 }

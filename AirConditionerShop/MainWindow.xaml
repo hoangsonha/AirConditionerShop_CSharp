@@ -5,9 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:AirConditionerShop"
         mc:Ignorable="d"
-        Title="AirConditionerShopManagement" Height="600" Width="1000" Background="#7bed9f" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+        Title="AirConditionerShopManagement" Height="600" Width="1000" Background="#7bed9f" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" Loaded="Window_Loaded">
     <Grid>
-        <DataGrid HorizontalAlignment="Left" Height="232" Margin="29,249,0,0" VerticalAlignment="Top" Width="749" AutoGenerateColumns="False">
+        <DataGrid x:Name="AirConDataGrid" HorizontalAlignment="Center" Height="345" Margin="0,229,0,0" VerticalAlignment="Top" Width="980" AutoGenerateColumns="False">
             <!-- true là có bao nhiêu data hay cột trong DB sẽ đc load lên hết, kể cả bảng JOIN, false là để config riêng (<table><thead><thead><table>) -->
             <DataGrid.Columns>
                 <DataGridTextColumn Header="ID" Width="40" Binding="{Binding AirConditionerId}"/>
@@ -17,10 +17,18 @@
                 <DataGridTextColumn Header="FeatureFunction" Width="200" Binding="{Binding FeatureFunction}"/>
                 <DataGridTextColumn Header="Quantity" Width="70" Binding="{Binding Quantity}"/>
                 <DataGridTextColumn Header="Price ($)" Width="100" Binding="{Binding DollarPrice }"/>
-                <DataGridTextColumn Header="SupplierId " Width="40" Binding="{Binding SupplierId }"/>
+                <DataGridTextColumn Header="SupplierId " Width="70" Binding="{Binding SupplierId }"/>
+                <DataGridTextColumn Header="SupplierName " Width="120" Binding="{Binding Supplier.SupplierName }"/>
 
                 <!-- Binding là nối data với cột trong DB -->
             </DataGrid.Columns>
         </DataGrid>
+        <Rectangle Fill="#ffcba4" HorizontalAlignment="Center" Height="120" Stroke="Black" VerticalAlignment="Top" Width="1000"/>
+        <TextBox HorizontalAlignment="Left" Margin="10,153,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="243" Height="34"/>
+        <Button Content="Search" Background="#7cfc00" HorizontalAlignment="Left" Margin="258,144,0,0" VerticalAlignment="Top" Height="51" Width="130"/>
+        <Button Content="Create Air" Background="#7cfc00" HorizontalAlignment="Left" Margin="451,144,0,0" VerticalAlignment="Top" Width="164" Height="51" Click="Button_Click"/>
+        <Button Content="Update Air" Background="#7cfc00" HorizontalAlignment="Left" Margin="636,144,0,0" VerticalAlignment="Top" Height="51" Width="179"/>
+        <Button Content="Delete Air" Background="#7cfc00" HorizontalAlignment="Left" Margin="833,144,0,0" VerticalAlignment="Top" Width="157" Height="52"/>
+        <Label Content="AirConditioner Management" FontSize="25" FontWeight="ExtraBold" HorizontalAlignment="Left" Margin="10,39,0,0" VerticalAlignment="Top" Width="378"/>
     </Grid>
 </Window>
