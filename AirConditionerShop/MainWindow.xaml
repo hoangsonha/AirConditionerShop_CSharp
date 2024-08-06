@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="AirConditionerShopManagement" Height="600" Width="1000" Background="#7bed9f" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" Loaded="Window_Loaded">
     <Grid>
-        <DataGrid x:Name="AirConDataGrid" HorizontalAlignment="Center" Height="345" Margin="0,229,0,0" VerticalAlignment="Top" Width="980" AutoGenerateColumns="False">
+        <DataGrid x:Name="AirConDataGrid" HorizontalAlignment="Center" Height="332" Margin="0,223,0,0" VerticalAlignment="Top" Width="980" AutoGenerateColumns="False">
             <!-- true là có bao nhiêu data hay cột trong DB sẽ đc load lên hết, kể cả bảng JOIN, false là để config riêng (<table><thead><thead><table>) -->
             <DataGrid.Columns>
                 <DataGridTextColumn Header="ID" Width="40" Binding="{Binding AirConditionerId}"/>
@@ -24,11 +24,11 @@
             </DataGrid.Columns>
         </DataGrid>
         <Rectangle Fill="#ffcba4" HorizontalAlignment="Center" Height="120" Stroke="Black" VerticalAlignment="Top" Width="1000"/>
-        <TextBox HorizontalAlignment="Left" Margin="10,153,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="243" Height="34"/>
-        <Button Content="Search" Background="#7cfc00" HorizontalAlignment="Left" Margin="258,144,0,0" VerticalAlignment="Top" Height="51" Width="130"/>
-        <Button Content="Create Air" Background="#7cfc00" HorizontalAlignment="Left" Margin="451,144,0,0" VerticalAlignment="Top" Width="164" Height="51" Click="CreateButton_Click"/>
-        <Button Content="Update Air" Background="#7cfc00" HorizontalAlignment="Left" Margin="636,144,0,0" VerticalAlignment="Top" Height="51" Width="179" Click="UpdateButton_Click"/>
-        <Button Content="Delete Air" Background="#7cfc00" HorizontalAlignment="Left" Margin="833,144,0,0" VerticalAlignment="Top" Width="157" Height="52" Click="DeleteButton_Click"/>
+        <TextBox x:Name="SearchText" HorizontalAlignment="Left" Margin="10,153,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="243" Height="34"/>
+        <Button Content="Search" Background="#7cfc00" HorizontalAlignment="Left" Margin="258,145,0,0" VerticalAlignment="Top" Height="51" Width="130" Click="SearchButton_Click"/>
+        <Button Content="Create Air" Background="#7cfc00" HorizontalAlignment="Center" Margin="0,145,0,0" VerticalAlignment="Top" Width="164" Height="51" Click="CreateButton_Click"/>
+        <Button Content="Update Air" Background="#7cfc00" HorizontalAlignment="Left" Margin="613,145,0,0" VerticalAlignment="Top" Height="51" Width="179" Click="UpdateButton_Click"/>
+        <Button Content="Delete Air" Background="#7cfc00" HorizontalAlignment="Left" Margin="822,144,0,0" VerticalAlignment="Top" Width="157" Height="52" Click="DeleteButton_Click"/>
         <Label Content="AirConditioner Management" FontSize="25" FontWeight="ExtraBold" HorizontalAlignment="Left" Margin="10,39,0,0" VerticalAlignment="Top" Width="378"/>
     </Grid>
 </Window>

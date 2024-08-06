@@ -8,9 +8,9 @@ D:\WorkSpaces\BE\.NET\AirConditionerShop\AirConditionerShop\AirConditionerShop.B
 D:\WorkSpaces\BE\.NET\AirConditionerShop\AirConditionerShop\AirConditionerShop.BLL\obj\Debug\net8.0\AirConditionerShop.BLL.AssemblyInfoInputs.cache
 D:\WorkSpaces\BE\.NET\AirConditionerShop\AirConditionerShop\AirConditionerShop.BLL\obj\Debug\net8.0\AirConditionerShop.BLL.AssemblyInfo.cs
 D:\WorkSpaces\BE\.NET\AirConditionerShop\AirConditionerShop\AirConditionerShop.BLL\obj\Debug\net8.0\AirConditionerShop.BLL.csproj.CoreCompileInputs.cache
+D:\WorkSpaces\BE\.NET\AirConditionerShop\AirConditionerShop\AirConditionerShop.BLL\obj\Debug\net8.0\AirConditionerShop.BLL.sourcelink.json
 D:\WorkSpaces\BE\.NET\AirConditionerShop\AirConditionerShop\AirConditionerShop.BLL\obj\Debug\net8.0\AirCondi.927B0A0D.Up2Date
 D:\WorkSpaces\BE\.NET\AirConditionerShop\AirConditionerShop\AirConditionerShop.BLL\obj\Debug\net8.0\AirConditionerShop.BLL.dll
 D:\WorkSpaces\BE\.NET\AirConditionerShop\AirConditionerShop\AirConditionerShop.BLL\obj\Debug\net8.0\refint\AirConditionerShop.BLL.dll
 D:\WorkSpaces\BE\.NET\AirConditionerShop\AirConditionerShop\AirConditionerShop.BLL\obj\Debug\net8.0\AirConditionerShop.BLL.pdb
 D:\WorkSpaces\BE\.NET\AirConditionerShop\AirConditionerShop\AirConditionerShop.BLL\obj\Debug\net8.0\ref\AirConditionerShop.BLL.dll
-D:\WorkSpaces\BE\.NET\AirConditionerShop\AirConditionerShop\AirConditionerShop.BLL\obj\Debug\net8.0\AirConditionerShop.BLL.sourcelink.json

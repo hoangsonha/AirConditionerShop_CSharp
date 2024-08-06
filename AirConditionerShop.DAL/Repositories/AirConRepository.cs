@@ -29,6 +29,8 @@ namespace AirConditionerShop.DAL.Repositories
 
         }
 
+        
+
         public void Add(AirConditioner airConditioner)
         {
             _context = new();

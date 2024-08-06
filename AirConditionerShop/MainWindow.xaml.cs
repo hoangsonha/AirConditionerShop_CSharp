@@ -1,5 +1,6 @@
 ﻿using AirConditionerShop.BLL.Services;
 using AirConditionerShop.DAL.Entities;
+using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using System.Windows;
 using System.Windows.Controls;
@@ -87,6 +88,13 @@ namespace AirConditionerShop
                 selected);
 
             FillDaTaInGrid();
+        }
+
+        private void SearchButton_Click(object sender, RoutedEventArgs e)
+        {
+            AirConDataGrid.ItemsSource = null;
+            AirConDataGrid.ItemsSource = _airService.SearchByName(SearchText.Text);
+            SearchText.Text = "";
         }
     }
 }
