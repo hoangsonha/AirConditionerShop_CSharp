@@ -1,5 +1,6 @@
 ﻿using AirConditionerShop.BLL.Services;
 using AirConditionerShop.DAL.Entities;
+using Microsoft.IdentityModel.Tokens;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -31,8 +32,51 @@ namespace AirConditionerShop
             InitializeComponent();
         }
 
+        private bool ValidationField()
+        {
+            if(AirConditionerNameTextBox.Text.IsNullOrEmpty())
+            {
+                MessageBox.Show("The Air Conditioner name is required!", "Field requied", MessageBoxButton.OK, MessageBoxImage.Error);
+                return false;
+            }
+            if (WarrantyTextBox.Text.IsNullOrEmpty())
+            {
+                MessageBox.Show("The Warranty is required!", "Field requied", MessageBoxButton.OK, MessageBoxImage.Error);
+                return false;
+            }
+            if (SoundPressureLevelTextBox.Text.IsNullOrEmpty())
+            {
+                MessageBox.Show("The Sound Pressure Level is required!", "Field requied", MessageBoxButton.OK, MessageBoxImage.Error);
+                return false;
+            }
+            if (FeatureFunctionTextBox.Text.IsNullOrEmpty())
+            {
+                MessageBox.Show("The Feature Function is required!", "Field requied", MessageBoxButton.OK, MessageBoxImage.Error);
+                return false;
+            }
+            if (QuantityTextBox.Text.IsNullOrEmpty())
+            {
+                MessageBox.Show("The Quantity is required!", "Field requied", MessageBoxButton.OK, MessageBoxImage.Error);
+                return false;
+            }
+            if (DollarPriceTextBox.Text.IsNullOrEmpty())
+            {
+                MessageBox.Show("The Dollar Price is required!", "Field requied", MessageBoxButton.OK, MessageBoxImage.Error);
+                return false;
+            }
+            if (SupplierIdComboBox.SelectedValue.ToString().IsNullOrEmpty())
+            {
+                MessageBox.Show("The Supplier Name is required!", "Field requied", MessageBoxButton.OK, MessageBoxImage.Error);
+                return false;
+            }
+
+            return true;
+        }
+
         private void SaveButton_Click(object sender, RoutedEventArgs e)
         {
+            if(!ValidationField()) return;
+
             AirConditioner airConditioner = new AirConditioner();
             airConditioner.AirConditionerId = int.Parse(AirConditionerIdTextBox.Text); // nếu key tự tăng thì k cần field ID vì hệ thống sẽ tự generate
             airConditioner.AirConditionerName = AirConditionerNameTextBox.Text;
@@ -42,7 +86,7 @@ namespace AirConditionerShop
             airConditioner.Quantity = int.Parse(QuantityTextBox.Text);
             airConditioner.DollarPrice = double.Parse(DollarPriceTextBox.Text);
             airConditioner.SupplierId = SupplierIdComboBox.SelectedValue.ToString();
-
+// vd Date: air.date = DatePicker.SelectedDate
             if(EditedAirCon == null)
             
                 _airService.AddCon(airConditioner);
@@ -94,7 +138,6 @@ namespace AirConditionerShop
             SupplierIdComboBox.SelectedValue = x.SupplierId;
 
         }
-
         private void CloseButton_Click(object sender, RoutedEventArgs e)
         {
             this.Close();

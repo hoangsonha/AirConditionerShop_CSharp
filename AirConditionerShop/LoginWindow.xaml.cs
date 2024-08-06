@@ -46,21 +46,18 @@ namespace AirConditionerShop
                     {
                         // tạo ra đối tường màn hình Main
                         MainWindow main = new();
+                        main.Member = member;
                         main.Show();
+                        
                         // show() là sẽ new ra cửa sổ mới nên cứ bấm là new
                         this.Hide();
                         // ẩn màn hình login đi
                     }
-                    else
-                    {
+                    else 
                         MessageBox.Show("Your role is not support!", "Wrong credentials!", MessageBoxButton.OK, MessageBoxImage.Error);
-                    }
                 }
                 else
-                {
-                    MessageBox.Show("Invalid email address or wrong password!", "Access denied!", MessageBoxButton.OK, MessageBoxImage.Error);
-                }
-
+                    MessageBox.Show("Invalid email or password!", "Access denied!", MessageBoxButton.OK, MessageBoxImage.Error);
             }
       
         }

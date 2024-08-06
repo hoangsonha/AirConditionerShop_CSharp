@@ -20,6 +20,7 @@ namespace AirConditionerShop
     public partial class MainWindow : Window
     {
         // chuẩn là khai báo biến interface = new implêmnt
+        public StaffMember Member { get; set; } = null;
 
         private AirConService _airService = new();
 
@@ -31,6 +32,13 @@ namespace AirConditionerShop
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
             FillDaTaInGrid();
+            Wellcome.Content = "Hello, " + Member.FullName;
+            if (Member.Role == 2) 
+            { 
+                CreateButton.IsEnabled = false;
+                UpdateButton.IsEnabled = false;
+                DeleteButton.IsEnabled = false;
+            }
         }
 
         private void FillDaTaInGrid()

@@ -15,10 +15,15 @@ namespace AirConditionerShop.DAL.Repositories
         {
             _context = new();
 
-            StaffMember user = null;
+            StaffMember user = _context.StaffMembers.FirstOrDefault(member => member.EmailAddress.ToLower().Equals(email.ToLower()));
 
-            return _context.StaffMembers.FirstOrDefault(member => member.EmailAddress.ToLower().Equals(email.ToLower()) && member.Password == password);
-
+            if (user != null) 
+            {
+                if (user.Password == password) 
+                    return user;
+                    
+            }
+            return null;
             // where tra ve nhieu, con firstOrDefault tra ve 1 tk or null 
         }
     }

@@ -4,4 +4,3 @@ D:\WorkSpaces\BE\.NET\AirConditionerShop\AirConditionerShop\AirConditionerShop\o
 D:\WorkSpaces\BE\.NET\AirConditionerShop\AirConditionerShop\AirConditionerShop\obj\Debug\net8.0-windows\App.g.cs
 D:\WorkSpaces\BE\.NET\AirConditionerShop\AirConditionerShop\AirConditionerShop\obj\Debug\net8.0-windows\AirConditionerShop_MarkupCompile.cache
 D:\WorkSpaces\BE\.NET\AirConditionerShop\AirConditionerShop\AirConditionerShop\obj\Debug\net8.0-windows\AirConditionerShop_MarkupCompile.lref
-D:\WorkSpaces\BE\.NET\AirConditionerShop\AirConditionerShop\AirConditionerShop\obj\Debug\net8.0-windows\AirConditionerShop_Content.g.cs
