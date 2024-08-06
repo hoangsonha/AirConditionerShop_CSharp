@@ -12,7 +12,7 @@
         <Label Content="Email" FontSize="15px" Foreground="#c71585" FontWeight="DemiBold" Background="Transparent" HorizontalAlignment="Left" Height="50" Margin="580,120,0,0" VerticalAlignment="Top" Width="76" HorizontalContentAlignment="Left"/>
         <Label Content="Password" HorizontalAlignment="Left" FontSize="15px" Foreground="#c71585" FontWeight="DemiBold" Background="Transparent" Height="50" Margin="580,181,0,0" VerticalAlignment="Top" Width="76" HorizontalContentAlignment="Center"/>
         <TextBox x:Name="EmailText" HorizontalAlignment="Left" Height="35" Margin="683,120,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="240" VerticalContentAlignment="Center" Padding="5,0,0,0"/>
-        <PasswordBox x:Name="PasswordText" HorizontalAlignment="Left" Margin="682,181,0,0" VerticalAlignment="Top" Width="241" Height="33"/>
+        <PasswordBox x:Name="PasswordText" HorizontalAlignment="Left" Margin="682,181,0,0" VerticalAlignment="Top" Width="241" Height="33" VerticalContentAlignment="Center"/>
         <Label Content="Login to manager Air" FontSize="40px" Foreground="#c71585" FontWeight="ExtraBold" Background="Transparent" HorizontalAlignment="Left" Height="82" Margin="10,210,0,0" VerticalAlignment="Top" Width="490" HorizontalContentAlignment="Center"/>
         <Label Content="Welcome to AirConditionerShop" FontSize="20px" Foreground="#c71585" FontWeight="ExtraBold" Background="Transparent" HorizontalAlignment="Left" Height="82" Margin="0,316,0,0" VerticalAlignment="Top" Width="500" HorizontalContentAlignment="Center"/>
         <Button x:Name="LoginButton" Content="Login" Background="#0070ff" FontSize="15" FontWeight="DemiBold" HorizontalAlignment="Left" Height="32" Margin="757,252,0,0" VerticalAlignment="Top" Width="166" Click="LoginButton_Click"/>
@@ -21,7 +21,5 @@
         <Button Content="Login with Google" BorderBrush="Black" FontSize="15" FontWeight="DemiBold" Background="#00ffff" HorizontalAlignment="Left" Height="41" Margin="578,389,0,0" VerticalAlignment="Top" Width="166" Padding="-1,1,1,1" BorderThickness="1,1,1,1"/>
         <Button Content="Login with Facebook" BorderBrush="Black" FontSize="15" Background="#00b7eb" FontWeight="DemiBold" HorizontalAlignment="Left" Height="41" Margin="757,389,0,0" VerticalAlignment="Top" Width="166"/>
         <Label Content="Or" FontSize="15px" Foreground="#c71585" FontWeight="DemiBold" Background="Transparent" HorizontalAlignment="Left" Height="28" Margin="722,307,0,0" VerticalAlignment="Top" Width="60" HorizontalContentAlignment="Center"/>
-
-
     </Grid>
 </Window>

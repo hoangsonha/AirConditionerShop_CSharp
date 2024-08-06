@@ -33,7 +33,7 @@ namespace AirConditionerShop
         {
             FillDaTaInGrid();
             Wellcome.Content = "Hello, " + Member.FullName;
-            if (Member.Role == 2) 
+            if (Member.Role == 3) 
             { 
                 CreateButton.IsEnabled = false;
                 UpdateButton.IsEnabled = false;

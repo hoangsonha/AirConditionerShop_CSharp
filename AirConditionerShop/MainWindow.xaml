@@ -26,10 +26,10 @@
         <Rectangle Fill="#ffcba4" HorizontalAlignment="Center" Height="120" Stroke="Black" VerticalAlignment="Top" Width="1000"/>
         <TextBox x:Name="SearchText" HorizontalAlignment="Left" Margin="10,149,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="263" Height="43"/>
         <Button Content="Search" Background="#7cfc00" HorizontalAlignment="Left" Margin="278,144,0,0" VerticalAlignment="Top" Height="51" Width="130" Click="SearchButton_Click"/>
-        <Button Content="Create Air" Background="#7cfc00" HorizontalAlignment="Left" Margin="444,145,0,0" VerticalAlignment="Top" Width="164" Height="51" Click="CreateButton_Click"/>
-        <Button Content="Update Air" Background="#7cfc00" HorizontalAlignment="Left" Margin="629,144,0,0" VerticalAlignment="Top" Height="51" Width="164" Click="UpdateButton_Click"/>
-        <Button Content="Delete Air" Background="#7cfc00" HorizontalAlignment="Left" Margin="811,145,0,0" VerticalAlignment="Top" Width="164" Height="51" Click="DeleteButton_Click"/>
+        <Button x:Name="CreateButton" Content="Create Air" Background="#7cfc00" HorizontalAlignment="Left" Margin="444,145,0,0" VerticalAlignment="Top" Width="164" Height="51" Click="CreateButton_Click"/>
+        <Button x:Name="UpdateButton" Content="Update Air" Background="#7cfc00" HorizontalAlignment="Left" Margin="629,144,0,0" VerticalAlignment="Top" Height="51" Width="164" Click="UpdateButton_Click"/>
+        <Button x:Name="DeleteButton" Content="Delete Air" Background="#7cfc00" HorizontalAlignment="Left" Margin="811,145,0,0" VerticalAlignment="Top" Width="164" Height="51" Click="DeleteButton_Click"/>
         <Label Content="AirConditioner Management" FontSize="30" FontWeight="ExtraBold" HorizontalAlignment="Left" Margin="-21,35,0,0" VerticalAlignment="Top" Width="490"/>
-        <Label x:Name="Wellcome" Content="" HorizontalAlignment="Left" Margin="831,20,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="Wellcome" FontSize="20" HorizontalAlignment="Left" Margin="784,33,0,0" VerticalAlignment="Top"/>
     </Grid>
 </Window>

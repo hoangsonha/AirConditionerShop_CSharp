@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 D:\WorkSpaces\BE\.NET\AirConditionerShop\AirConditionerShop\AirConditionerShop\App.xaml
-2-205429674
+3-1829128490
 
-9-939597397
+8684101419
 246864653492
-DetailWindow.xaml;MainWindow.xaml;
+DetailWindow.xaml;LoginWindow.xaml;MainWindow.xaml;
 
-False
+True
 

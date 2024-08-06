@@ -18,9 +18,9 @@
     <Page Update="DetailWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Compile Update="LoginWindow.xaml">
+    <Page Update="LoginWindow.xaml">
       <SubType>Designer</SubType>
-    </Compile>
+    </Page>
     <Page Update="MainWindow.xaml">
       <SubType>Designer</SubType>
     </Page>

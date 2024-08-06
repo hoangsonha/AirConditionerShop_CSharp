@@ -22,7 +22,9 @@ namespace AirConditionerShop
     /// </summary>
     public partial class LoginWindow : Window
     {
+        
         private MemberService _memberService = new();
+
         public LoginWindow()
         {
             InitializeComponent();
@@ -34,32 +36,34 @@ namespace AirConditionerShop
             if (EmailText.Text.Trim().IsNullOrEmpty())
             {
                 MessageBox.Show("Please input your email address!", "Wrong credentials!", MessageBoxButton.OK, MessageBoxImage.Error);
-            } else if(PasswordText.Text.Trim().IsNullOrEmpty())
-                {
-                MessageBox.Show("Please input your password!", "Wrong credentials!", MessageBoxButton.OK, MessageBoxImage.Error);
-            } else
+            }
+            else if (PasswordText.Password.Trim().IsNullOrEmpty())
             {
-                StaffMember? member = _memberService.checkLogin(EmailText.Text, PasswordText.Text);
+                MessageBox.Show("Please input your password!", "Wrong credentials!", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+            else
+            {
+                StaffMember? member = _memberService.checkLogin(EmailText.Text, PasswordText.Password);
                 if (member != null)
                 {
-                    if (member.Role == 1 || member.Role == 2)
+                    if (member.Role == 1 || member.Role == 3)
                     {
                         // tạo ra đối tường màn hình Main
                         MainWindow main = new();
                         main.Member = member;
                         main.Show();
-                        
                         // show() là sẽ new ra cửa sổ mới nên cứ bấm là new
-                        this.Hide();
+
+                        //this.Hide();
                         // ẩn màn hình login đi
                     }
-                    else 
+                    else
                         MessageBox.Show("Your role is not support!", "Wrong credentials!", MessageBoxButton.OK, MessageBoxImage.Error);
                 }
                 else
                     MessageBox.Show("Invalid email or password!", "Access denied!", MessageBoxButton.OK, MessageBoxImage.Error);
             }
-      
+
         }
 
         private void ExitButton_Click(object sender, RoutedEventArgs e)
