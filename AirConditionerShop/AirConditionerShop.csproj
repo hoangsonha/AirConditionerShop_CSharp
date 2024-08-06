@@ -9,6 +9,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Page Remove="LoginWindow.xaml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="LoginWindow.xaml" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\AirConditionerShop.BLL\AirConditionerShop.BLL.csproj">
       <Private>True</Private>
     </ProjectReference>
