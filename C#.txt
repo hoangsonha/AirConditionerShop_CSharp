@@ -30,9 +30,9 @@ Microsoft.Extensions.Configuration, Microsoft.Extensions.Configuration.Json)  ->
 
 5. DB Context : dotnet ef dbcontext scaffold (auto - genarated)
 
-dotnet ef dbcontext scaffold "Server=localhost;uid=sa;pwd=12345;database=AirConditionerShop;TrustServerCertificate=True" Microsoft.EntityFrameworkCore.SqlServer --output-dir (Entities --context-dir ".\") or (Models)  (tach phan connect DB Context ra rieng)
+dotnet ef dbcontext scaffold "Server=localhost;uid=sa;pwd=12345;database=AirConditionerShop;TrustServerCertificate=True" Microsoft.EntityFrameworkCore.SqlServer --output-dir (Entities --context-dir ".\" (. tức là tạo tại thư mục này)) or (Models tên tự đặt)  (tach phan connect DB Context ra rieng)
 
-
+dotnet ef dbcontext scaffold "Server=localhost;uid=sa;pwd=12345;database=TikTok;TrustServerCertificate=True" Microsoft.EntityFrameworkCore.SqlServer --output-dir Entities --context-dir ".\"
 
 6. chuyển chuỗi kết nối qua file appsetting.json, cái ở bước 3
 
@@ -54,3 +54,4 @@ private string GetConnectionString()
 	var strConn = config["ConnectionStrings:DefaultConnectionStringDB"];
 	return strConn;
 }
+
